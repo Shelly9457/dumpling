@@ -389,6 +389,11 @@
             }
 
         }
+
+
+        function showalert(){
+    alert("已收到您的訂單！");
+  }
     </script>
 
 </head>
@@ -552,7 +557,12 @@
 
                 <tr>
 
-                    <td colspan="6">總價<span id="total">0</span> 元</td>
+                    
+                        <td colspan="6">總價<span id="total">0</span> 元
+                        <td>
+                            <input type="button" onclick="showalert()" value="送出訂單" />
+                            </td>
+                    </form>
 
                 </tr>
 
