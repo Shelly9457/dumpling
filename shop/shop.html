@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <div class="logo"><a href="../index.html"><img src="../img/logo.png" style="display:block; margin:auto;" hight="130"
-                width="180" alt="logo">
+                width="180"  alt="logo">
             <text-align:center;>
         </a></div>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,10 @@
         }
     </style>
     <style>
+        body
+        {
+            background-color: rgb(228, 221, 211);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -118,15 +122,25 @@
         tr {
             border: 0.5% solid rgb(7, 23, 46);
         }
+        td
+        {
+
+        }
+        th
+        {
+
+        }
 
         table {
             width: 200px;
-
             height: 180px;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         .active {
-            background-color: #39f
+            background-color: rgb(163, 207, 198)
         }
 
 
@@ -137,8 +151,8 @@
 
         .row {
 
-            width: 58%;
-            height: 100%;
+            width: 82%;
+            height: 50%;
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
@@ -147,13 +161,10 @@
 
         .col {
 
-            width: 200px;
-
+            width: 150px;
             height: 180px;
-
             margin: 0px 1px 0px 1px;
             padding-top: 2px;
-
             border: solid black 1px;
             text-align: center;
             justify-content: center;
@@ -161,14 +172,29 @@
             margin-left: auto;
             margin-right: auto;
             float: left;
-
-
-
         }
 
         .col img {
             width: 150px;
         }
+
+        .a {
+            width: auto;
+            margin-right: 0px;
+
+            align-items:flex-start;
+        }
+
+        .b
+        {
+            width: 500px;
+            height:150px;
+        }
+        .aa
+        {
+            background-color: rgb(126, 185, 245);
+        }
+
     </style>
 
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -391,9 +417,9 @@
         }
 
 
-        function showalert(){
-    alert("已收到您的訂單！");
-  }
+        function showalert() {
+            alert("已收到您的訂單！");
+        }
     </script>
 
 </head>
@@ -430,146 +456,159 @@
     </div>
     <div>
 
-        <!-- 商品列表 -->
+        <table class="a" style="table-layout:fixed";" border="0" width="30%">
 
-        <div class="row">
-            <div class="col">
-                <p><span>奇異果水餃</span>:&ensp;$<span>9 </span></p>
+            <tr>
+                <td>
+                    <!-- 商品列表 -->
 
-                <img src="../img/奇異果.png">
+                    <div class="row">
+                        <div class="col">
+                            <p><span>奇異果水餃</span>:&ensp;$<span>9 </span></p>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                            <img src="../img/奇異果.png">
 
-            </div>
+                            <input type="button" value="新增至購物車" onclick="add(this)">
 
-            <div class="col">
+                        </div>
 
-                <p><span>柑橘水餃</span>:&ensp;$<span>9 </span></p>
+                        <div class="col">
 
-                <img src="../img/柑橘.png">
+                            <p><span>柑橘水餃</span>:&ensp;$<span>9 </span></p>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                            <img src="../img/柑橘.png">
 
-            </div>
+                            <input type="button" value="新增至購物車" onclick="add(this)">
 
-            <div class="col">
+                        </div>
 
-                <p><span>水梨水餃</span>:&ensp;$<span>9 </span></p>
+                        <div class="col">
 
-                <img src="../img/水梨.png">
+                            <p><span>水梨水餃</span>:&ensp;$<span>9 </span></p>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                            <img src="../img/水梨.png">
 
-            </div>
+                            <input type="button" value="新增至購物車" onclick="add(this)">
 
-            <div class="col">
+                        </div>
 
-                <p><span>火龍果水餃</span>:&ensp;$<span>9 </span></p>
+                        <div class="col">
 
-                <img src="../img/火龍果.png">
+                            <p><span>火龍果水餃</span>:&ensp;$<span>9 </span></p>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                            <img src="../img/火龍果.png">
 
-            </div>
-            <div class="col">
+                            <input type="button" value="新增至購物車" onclick="add(this)">
 
-                <p><span>芒果水餃</span>:&ensp;$<span>9 </span></p>
+                        </div>
+                        <div class="col">
 
-                <img src="../img/芒果.png">
+                            <p><span>芒果水餃</span>:&ensp;$<span>9 </span></p>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                            <img src="../img/芒果.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
 
 
-            </div>
+                        </div>
+
+                        <div class="col">
+
+                            <p><span>蘋果水餃</span>:&ensp;$<span>9 </span></p>
+                            <img src="../img/蘋果.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
+
+                        </div>
+                        <div class="col">
+                            <p><span>葡萄水餃</span>:&ensp;$<span>9 </span></p>
+
+                            <img src="../img/葡萄.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
+
+                        </div>
+                        
+                        <div class="col">
+
+                            <p><span>鳳梨水餃</span>:&ensp;$<span>9 </span></p>
+
+                            <img src="../img/鳳梨.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
+
+                        </div>
+                        <div class="col">
+
+                            <p><span>香蕉水餃</span>:&ensp;$<span>9 </span></p>
+
+                            <img src="../img/香蕉.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
+
+                        </div>
+                        <div class="col">
+
+                            <p><span>西瓜水餃</span>:&ensp;$<span>9 </span></p>
+
+                            <img src="../img/西瓜.png">
+
+                            <input type="button" value="新增至購物車" onclick="add(this)">
+
+                        </div>
+
+                    </div>
+                </td>
+
+                <td>
+                    <!--這裡寫購物車程式碼-->
+
+                    <table class = "b"  border="1" width="80%">
+
+                        <thead>
+
+                            <tr>
+
+                                <th><input type="checkbox" onclick="check(this)"></th>
+
+                                <th class ="aa"> 名稱</th>
+
+                                <th class ="bb">圖片</th>
+
+                                <th class ="aa">價錢</th>
+
+                                <th class ="bb">數量</th>
+
+                                <th class ="aa">移除</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="tb">
+
+                        <tfoot>
+
+                            <tr>
 
 
-            <div class="col">
+                                <td colspan="5">總價<span id="total">0</span> 元
+                                <td>
+                                    <input type="button" onclick="showalert()" value="送出訂單" />
+                                </td>
+                                </form>
 
-                <p><span>蘋果水餃</span>:&ensp;$<span>9 </span></p>
-                <img src="../img/蘋果.png">
+                            </tr>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
+                        </tfoot>
 
-            </div>
-            <div class="col">
-                <p><span>葡萄水餃</span>:&ensp;$<span>9 </span></p>
+                    </table>
 
-                <img src="../img/葡萄.png">
+    </div>
+    </td>
+    </tr>
 
-                <input type="button" value="新增至購物車" onclick="add(this)">
-
-            </div>
-            <div class="col">
-
-                <p><span>鳳梨水餃</span>:&ensp;$<span>9 </span></p>
-
-                <img src="../img/鳳梨.png">
-
-                <input type="button" value="新增至購物車" onclick="add(this)">
-
-            </div>
-            <div class="col">
-
-                <p><span>香蕉水餃</span>:&ensp;$<span>9 </span></p>
-
-                <img src="../img/香蕉.png">
-
-                <input type="button" value="新增至購物車" onclick="add(this)">
-
-            </div>
-            <div class="col">
-
-                <p><span>西瓜水餃</span>:&ensp;$<span>9 </span></p>
-
-                <img src="../img/西瓜.png">
-
-                <input type="button" value="新增至購物車" onclick="add(this)">
-
-            </div>
-
-        </div>
-        <!--這裡寫購物車程式碼-->
-        <table border="1" width="80%">
-
-            <thead>
-
-                <tr>
-
-                    <th><input type="checkbox" onclick="check(this)"></th>
-
-                    <th>名稱</th>
-
-                    <th>圖片</th>
-
-                    <th>價錢</th>
-
-                    <th>數量</th>
-
-                    <th>移除</th>
-
-                </tr>
-
-            </thead>
-
-            <tbody id="tb">
-
-            <tfoot>
-
-                <tr>
-
-                    
-                        <td colspan="5">總價<span id="total">0</span> 元
-                        <td>
-                            <input type="button" onclick="showalert()" value="送出訂單" />
-                            </td>
-                    </form>
-
-                </tr>
-
-            </tfoot>
-
-        </table>
-
+    </table>
     </div>
 </body>
 
