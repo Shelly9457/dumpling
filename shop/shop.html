@@ -192,6 +192,25 @@
         .aa {
             background-color: rgb(126, 185, 245);
         }
+
+        .bb {
+            background-color: gray;
+        }
+
+        .xx {
+            width: 10px;
+            height: 10px;
+        }
+
+        .yy {
+            width: 420.5px;
+            height: 30px;
+        }
+
+        .ww{
+            width: 140px;
+            height: 30px;
+        }
     </style>
 
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -265,6 +284,7 @@
             inputs[1].value = parseInt(inputs[1].value) + 1;
 
             calculate();
+
 
         }
 
@@ -457,7 +477,7 @@
         <tr>
             <td>
                 <!-- 商品列表 -->
-                <table class="a" style="table-layout:fixed" ;" border="1" width="30%">
+                <table class="a" style="table-layout:fixed" ;border="0" width="30%">
                     <tr>
                         <td>
                             <div class="row">
@@ -588,26 +608,22 @@
                     <tr>
                         <td>
                             <!--這裡寫購物車程式碼-->
+                            <table class="aa" width="30%" border="1" style="display:inline">
+                                <tr>
 
-                            <table class="b" border="1" width="80%">
+                                    <th class="xx"><input type="checkbox" onclick="check(this)"></th>
 
-                                <thead>
+                                    <th class="cc"> 名稱</th>
 
-                                    <tr>
+                                    <th class="cc">圖片</th>
 
-                                        <th><input type="checkbox" onclick="check(this)"></th>
+                                    <th class="cc">價錢</th>
 
-                                        <th class="aa"> 名稱</th>
+                                    <th class="cc">數量</th>
 
-                                        <th class="bb">圖片</th>
+                                    <th class="cc">移除</th>
 
-                                        <th class="aa">價錢</th>
-
-                                        <th class="bb">數量</th>
-
-                                        <th class="aa">移除</th>
-
-                                    </tr>
+                                </tr>
 
                                 </thead>
 
@@ -616,25 +632,21 @@
                                 <tfoot>
 
                                     <tr>
-
-
-                                        <td colspan="5">總價<span id="total">0</span> 元
+                                        <td class="bb" colspan="5">總價<span id="total">0</span> 元</td>
                                         <td>
-                                            <input type="button" onclick="showalert()" value="送出訂單" />
+                                            <input type="button" style="width: 140px;height:25px;" onclick="showalert()"
+                                                value="送出訂單" />
                                         </td>
-                                        </form>
-
+                                    </tr>
+                                    <tr>
+                                        <td class="bb" colspan="5"><input class="yy" placeholder="請輸入您的取貨地址"></td>
+                                        <td class="bb" colspan="5"><select class="ww">
+                                                <option>選擇您的付款方式</option>
+                                                <option>貨到付款</option>
+                                                <option>銀行轉帳</option>
+                                            </select></td>
                                     </tr>
 
-                                </tfoot>
-
-                            </table>
-
-    </div>
-    </td>
-    </tr>
-    </td>
-    </tr>
     </table>
 
 </html>
